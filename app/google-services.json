@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1013056780554",
+    "project_id": "appointmentapp-fb91a",
+    "storage_bucket": "appointmentapp-fb91a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013056780554:android:f6d107b48030d0f07562f3",
+        "android_client_info": {
+          "package_name": "com.onyx.appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013056780554-paf5stiii4qa6olj83m17eliarvbe3do.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onyx.appointment",
+            "certificate_hash": "6e80334fec89c058c0b9699faac19c81fd2334df"
+          }
+        },
+        {
+          "client_id": "1013056780554-3vuno85nlsuscoc4ttmiskd34eqvlfjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNpIRwBXEFp7-_dv_hCdX5NBczQRlQ3yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013056780554-3vuno85nlsuscoc4ttmiskd34eqvlfjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
