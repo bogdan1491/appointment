@@ -8,8 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
-import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
@@ -23,14 +23,14 @@ class GoogleLoginActivity : AppCompatActivity() {
         private const val RC_GOOGLE_SIGN_IN = 4926
     }
 
-    private lateinit var btnSignIn: Button
+    private lateinit var btnSignIn: SignInButton
 
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_google_login)
-        btnSignIn = findViewById(R.id.sign_in_button)
+        btnSignIn = findViewById(R.id.btnSignIn)
 
         // Initialize Firebase Auth
         auth = Firebase.auth
@@ -61,6 +61,7 @@ class GoogleLoginActivity : AppCompatActivity() {
             Log.w(TAG, "User is null, not going to navigate")
         }
         startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
